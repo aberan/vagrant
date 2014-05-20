@@ -12,7 +12,5 @@ file { '/var/www/':
 
 file { '/var/www/app':
   ensure  => 'link',
-  target  => '/vagrant/craft',
+  target  => '/vagrant/deploy',
 }
-
-#include nginx, php
