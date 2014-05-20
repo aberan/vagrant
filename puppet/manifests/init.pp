@@ -12,5 +12,5 @@ file { '/var/www/':
 
 file { '/var/www/app':
   ensure  => 'link',
-  target  => '/vagrant/deploy',
+  target  => '/app',
 }
