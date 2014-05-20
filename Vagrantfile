@@ -40,6 +40,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # argument is a set of non-required options.
   config.vm.synced_folder "../sql", "/sql"
   config.vm.synced_folder "../html", "/app"
+
+  config.vm.provider :virtualbox do |vb|
+    vb.name = "[new project]"
+  end
   
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
